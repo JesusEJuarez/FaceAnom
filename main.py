@@ -18,7 +18,6 @@ def process_img(img, face_detection):
             bbox = location_data.relative_bounding_box
 
             x1, y1, w, h = bbox.xmin, bbox.ymin, bbox.width, bbox.height
-
             x1 = int(x1 * W)
             y1 = int(y1 * H)
             w = int(w * W)
