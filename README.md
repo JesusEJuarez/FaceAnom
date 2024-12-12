@@ -1,5 +1,5 @@
 # FACE-ANOM
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://youtu.be/ef8cEhDPXPc>
 #### Description:
 Face-Anom is a desktop application designed to anonymize faces in videos by applying a blur effect to detected faces. The app supports two modes:
 
