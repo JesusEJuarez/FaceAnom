@@ -95,7 +95,7 @@ def visualizar():
 def import_model():
     mp_face = mp.solutions.face_detection.FaceDetection(
         model_selection = 1, #Model selection
-        min_detection_confidence = 0.5 #Condidence threshold
+        min_detection_confidence = 0.3 #Condidence threshold
     )
     return mp_face
 def process_img(frame, mp_face):
@@ -116,7 +116,7 @@ def process_img(frame, mp_face):
             h = int(h * HIGH)
 
             # blur faces
-            frame[y1:y1 + h, x1:x1 + w, :] = cv2.blur(frame[y1:y1 + h, x1:x1 + w, :], (30, 30)) # blur faces
+            frame[y1:y1 + h, x1:x1 + w, :] = cv2.blur(frame[y1:y1 + h, x1:x1 + w, :], (60, 60)) # blur faces
 
     return frame
 def output_file():
